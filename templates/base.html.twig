@@ -2,9 +2,27 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}ISAMM Conference{% endblock %}</title>
         {# Run `composer require symfony/webpack-encore-bundle`
            and uncomment the following Encore helpers to start using Symfony UX #}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Invitex is event and conference website template">
+        <meta name="author" content="">
+        <!-- CSS Files
+        ================================================== -->
+        <link rel="stylesheet" href="{{asset('assets/css/bootstrap.css')}}" type="text/css">
+        <link rel="stylesheet" href="{{asset('assets/css/animate.css')}}" type="text/css">
+        <link rel="stylesheet" href="{{asset('assets/css/owl.carousel.css')}}" type="text/css">
+        <link rel="stylesheet" href="{{asset('assets/css/magnific-popup.css')}}" type="text/css">
+        <link rel="stylesheet" href="{{asset('assets/css/jquery.countdown.css')}}" type="text/css">
+        <link rel="stylesheet" href="{{asset('assets/css/style.css')}}" type="text/css">
+        <link rel="stylesheet" href="{{asset('assets/css/color.css')}}" type="text/css">
+        <link rel="stylesheet" href="{{asset('assets/css/colors/orange.css')}}" type="text/css">
+        <link rel="stylesheet" href="{{asset('assets/css/colors/gradient-1.css')}}" type="text/css">
+
+        <!-- background -->
+        <link rel="stylesheet" href="{{asset('assets/css/bg.css')}}" type="text/css">
+
         {% block stylesheets %}
             {#{{ encore_entry_link_tags('app') }}#}
         {% endblock %}
@@ -15,5 +33,24 @@
     </head>
     <body>
         {% block body %}{% endblock %}
+        <!-- Javascript Files
+        ================================================== -->
+        <script src="{{asset('assets/js/jquery.min.js')}}"></script>
+        <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
+        <script src="{{asset('assets/js/jquery.isotope.min.js')}}"></script>
+        <script src="{{asset('assets/js/easing.js')}}"></script>
+        <script src="{{asset('assets/js/owl.carousel.js')}}"></script>
+        <script src="{{asset('assets/js/jquery.countTo.js')}}"></script>
+        <script src="{{asset('assets/js/wow.min.js')}}"></script>
+        <script src="{{asset('assets/js/jquery.magnific-popup.min.js')}}"></script>
+        <script src="{{asset('assets/js/enquire.min.js')}}"></script>
+        <script src="{{asset('assets/js/jquery.stellar.min.js')}}"></script>
+        <script src="{{asset('assets/js/jquery.plugin.j')}}s"></script>
+        <script src="{{asset('assets/js/jquery.countdown.js')}}"></script>
+        <script src="{{asset('assets/js/countdown-custom.js')}}"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc5d1RS_0yWJ1Hyw2hGWfbRZ9KKaxFAZo"></script>
+        <script src="{{asset('assets/js/map.js')}}"></script>
+        <script src="{{asset('assets/js/designesia.js')}}"></script>
+        <script src="{{asset('assets/js/validation.js')}}"></script>    
     </body>
 </html>
