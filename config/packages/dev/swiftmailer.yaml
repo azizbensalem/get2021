@@ -1,0 +1,6 @@
+# # See https://symfony.com/doc/current/email/dev_environment.html
+# config/packages/test/swiftmailer.yaml
+swiftmailer:
+    disable_delivery: true
+
+

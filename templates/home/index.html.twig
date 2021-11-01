@@ -12,7 +12,11 @@
                     <div class="col-md-12">
                         <!-- logo begin -->
                         <div id="logo">
-                          
+
+                            <a href="">
+                                <img class="logo" src="{{asset('assets/images/logo/logo_ISAMM.png')}}" alt="Logo ISAMM">
+                                <img class="logo-2" src="{{asset('assets/images/logo/logo_ISAMM.png')}}" alt="Logo ISAMM">
+                            </a>
                         </div>
                         <!-- logo close -->
 
@@ -644,45 +648,33 @@
 
                                     <div class="col-md-12">
                                         <div id="register-with-map" class="bg-white">
-                                            <form name="contactForm" id='contact_form' class="float-form padding60 pt40 form-s1" method="post" action='email.php'>
-
+                                            <div name="contactForm" id='contact_form' class="float-form padding60 pt40 form-s1">
+                                            {{ form_start(registrationForm) }}
                                                 <div class="field-set">
-                                                    <input type='text' name='name' id='name' class="form-control" placeholder="Prénom Nom">
+                                                    {{ form_widget(registrationForm.nom, { 'attr': {'class': 'form-control', 'placeholder': 'Nom'} }) }}
                                                 </div>
                                                 <div class="field-set">
-                                                    <input type='text' name='name' id='name' class="form-control" placeholder="Nom">
+                                                    {{ form_widget(registrationForm.prenom, { 'attr': {'class': 'form-control', 'placeholder': 'Prénom'} }) }}
                                                 </div>
-
                                                 <div class="field-set">
-                                                    <input type='text' name='email' id='email' class="form-control" placeholder="Adresse Email">
+                                                   {{ form_widget(registrationForm.email, { 'attr': {'class': 'form-control', 'placeholder': 'Email'} }) }}
                                                 </div>
-
                                                 <div class="field-set">
-                                                    <input type='text' name='phone' id='phone' class="form-control" placeholder="Numéro de téléphone">
-                                                </div>
-												
+                                                   {{ form_widget(registrationForm.telephone, { 'attr': {'class': 'form-control', 'placeholder': 'Téléphone'} }) }}
+                                                </div><br>							
 												<div class="field-set">
-													<select id="ticket" name="ticket" size="1" class="form-control">
-													  <option value="" disabled selected>Etablissement</option>
-													  <option>Early Bird</option>
-													  <option>Regular</option>
-													  <option>Exclusive</option>
-													</select>
+                                                    {{ form_widget(registrationForm.etablissement, { 'attr': {'class': 'form-control', 'placeholder': 'Établissement'} }) }}
 												</div>
 
-
-
                                                 <div class="spacer-half"></div>
-                                                <div id='submit'>
-                                                    <input type='submit' id='send_message' value='Submit Form' class="btn btn-custom color-2">
-                                                </div>
-                                                <div id='mail_success' class='success'>Your message has been sent successfully.</div>
-                                                <div id='mail_fail' class='error'>Sorry, error occured this time sending your message.</div>
-
-                                            </form>
-
-                                         
-
+                                                    <button type='submit' class="btn btn-custom color-2">Register</button>
+                                                {% for flashError in app.flashes('verify_email_error') %}
+                                                    <div id='mail_fail' class='error' role="alert">{{ flashError }}</div>
+                                                {% endfor %}
+                                                {# <div id='mail_success' class='success'>Your message has been sent successfully.</div>
+                                                <div id='mail_fail' class='error'>Sorry, error occured this time sending your message.</div> #}
+                                            {{ form_end(registrationForm) }}
+                                            </div>
                                             <div class="clearfix"></div>
                                         </div>
                                     </div>
