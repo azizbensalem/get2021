@@ -1,50 +1,52 @@
-.orange{color:#ffa854;}
-.pink{color:#fc4668;}
-.purple{color:#694c8b;}
+.orange{color:#40cfff;}
+.pink{color:#15d9f3;}
+.purple{color:#249eff;}
 .purple-dark{color:#383069;}
+.blue{color: #54a4ff;}
 
+.bg-blue{background-color: #54a4ff;}
 .bg-white{background:#ffffff;}
-.bg-orange{background-color:#ffa854;}
-.bg-pink{background-color:#fc4668;}
-.bg-purple{background-color:#694c8b;}
-.bg-purple-dark{background-color:#383069;}
+.bg-orange{background-color:#54d3ff;}
+.bg-pink{background-color:#46e7fc;}
+.bg-purple{background-color:#287fcf;}
+.bg-purple-dark{background-color:#4f3dc7;}
 
 .countdown-s5 .countdown-section:nth-child(2n+2){
-	background-color:#fc4668;
+	background-color:#46f0fc;	
 }
 
 .de_tab.tab_style_4 .de_nav li:nth-child(1n+1).active,
 .small-border{
-	background-color:#fc4668;
+	background-color:#46fced;
 }
 .de_tab.tab_style_4 .de_nav li:nth-child(2n+2).active, 
 .de_tab.tab_style_4 .de_nav li:nth-child(2n+2).active,
 .countdown-s5 .countdown-section:nth-child(3n+3){
-	background-color:#694c8b;
+	background-color:#145bf3;
 }
 .de_tab.tab_style_4 .de_nav li:nth-child(3n+3).active, 
 .de_tab.tab_style_4 .de_nav li:nth-child(3n+3).active,
 .countdown-s5 .countdown-section{
-	background-color:#ffa854;
+	background-color:#54a4ff;
 }
 
 .countdown-s5 .countdown-section:nth-child(4n+4){
-	background-color:#383069;
+	background-color:#3e24e9;
 }
 
 /* orange */
 .countdown-s3 .countdown-show4 .countdown-section{
-	border-color:#ffa854;
+	border-color:#54ddff;
 }
 /* pink */
 .countdown-s3 .countdown-show4 .countdown-section:nth-child(2n+2){
-	border-color:#fc4668;
+	border-color:#46d1fc;
 }
 /* purple */
 .countdown-s3 .countdown-show4 .countdown-section:nth-child(3n+3){
-	border-color:#694c8b;
+	border-color:#1f75f5;
 }
 /* dark purple */
 .countdown-s3 .countdown-show4 .countdown-section:nth-child(4n+4){
-	border-color:#383069;
+	border-color:#1973da;
 }

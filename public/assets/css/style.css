@@ -473,7 +473,7 @@ header.de_header_2.smaller .info {
 	padding: 25px 0px 25px 20px;
 	line-height: 35px;
 	text-decoration: none;
-	color: #fff;
+	color: rgb(255, 255, 255);
 	text-align: center;
 	outline: none;
 }
@@ -588,7 +588,7 @@ header.de_header_2.smaller .info {
 	height: 36px;
 	font-size: 14px;
 	border: none;
-	background: #ff4200;
+	background: #4400ff;
 	color: #eceff3;
 }
 #mainmenu select option {
@@ -1103,7 +1103,7 @@ header.header-light .logo-2{
 	border: solid 1px #eee;
 }
 .ratings {
-	color: #F86E4E;
+	color: #734ef8;
 }
 .product .ratings {
 	margin: 5px 0 5px 0;
@@ -1312,7 +1312,7 @@ address span a {
 	border-bottom: solid 1px #ddd;
 }
 .de_light #sidebar .widget address a {
-	color: #333;
+	color: rgb(241, 15, 15);
 }
 
 /* border */
@@ -1411,10 +1411,10 @@ a:hover {
 	color: #fff;
 }
 .de_light a {
-	color: #888;
+	color: rgb(99, 196, 252);
 }
 .de_light a:hover {
-	color: #555;
+	color: rgb(51, 154, 214);
 }
 .btn-line, a.btn-line {
 	border: solid 1px #222;
@@ -2161,7 +2161,7 @@ h2.hs1 i {
 	font-size: 48px;
 	position: relative;
 	top: 10px;
-	color: #ff0042;
+	color: #00a2ff;
 	margin: 0 10px 0 10px;
 }
 h2.hs1 span {
@@ -2905,7 +2905,6 @@ span.teaser {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: url(../images/logo-small.png) center no-repeat #222222 !important;
 	text-align: center;
 }
 .preloader1 {
@@ -3007,9 +3006,9 @@ span.teaser {
 
 .fa-facebook{background:#3e5a9b;}
 .fa-twitter{background:#55aded;}
-.fa-google-plus{background:#df4f37;}
+.fa-google-plus{background:#37d4df;}
 .fa-linkedin{background:#0075ad;}
-.fa-rss{background:#fb6506;}
+.fa-rss{background:#06b6fb;}
 
 
 /*
