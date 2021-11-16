@@ -604,6 +604,12 @@ header.de_header_2.smaller .info {
 	margin: 0;
 }
 
+.logoTop {
+	text-align: center;
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+
 /* menu toggle for mobile */
 
 #menu-btn {
@@ -2029,7 +2035,7 @@ h2.deco-text .xl {
 h3 {
 	font-size: 18px;
 	margin-top: 0;
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
 	font-weight:600;
 }
 .subtitle.s2 {

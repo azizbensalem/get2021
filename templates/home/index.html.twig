@@ -4,20 +4,19 @@
 
 {% block body %}
 <body id="homepage">
-    <div id="wrapper">
+    <div class="container">
+            <div class="col-md-4 logoTop"><img src="{{asset('assets/images/logo/PAQ_DGSE.jpg')}}" alt="" style="width: 40%;"></div>
+            <div class="col-md-4 logoTop"><img src="{{asset('assets/images/logo/LOGO UMA.png')}}" alt="" style="width: 20%;"></div>
+            <div class="col-md-4 logoTop"><img src="{{asset('assets/images/logo/logo isamm.jpg')}}" alt="" style="width: 30%;"></div>
+    </div>
+    <div id="wrapper" style="position: relative;">
         <!-- header begin -->
         <header>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <!-- logo begin -->
-                        <div id="logo">
-
-                            <a href="">
-                                <img class="logo" src="{{asset('assets/images/logo/logo_ISAMM.png')}}" alt="Logo ISAMM">
-                                <img class="logo-2" src="{{asset('assets/images/logo/logo_ISAMM.png')}}" alt="Logo ISAMM">
-                            </a>
-                        </div>
+                       
                         <!-- logo close -->
 
                         <!-- small button begin -->
@@ -29,10 +28,12 @@
                             <ul id="mainmenu">
                                 <li><a class="active " href="#top">Home</a></li>
                                 <li><a href="#section-about">About</a></li>
+                                <li><a href="#section-presentation">Presentation</a></li>
                                 <li><a href="#section-speakers">Speakers</a></li>
                                 <li><a href="#section-schedules">Schedules</a></li>
+                                <li><a href="#section-organizing">Organizing Committee</a></li>
                                 <li><a href="#section-register">Register</a></li>								
-                                {# <li><a href="#section-sponsors">Sponsors</a></li> #}
+                                <li><a href="#section-sponsors">Partners</a></li>
                             </ul>
                         </nav>
 
@@ -46,12 +47,12 @@
 
         <!-- content begin -->
         <div id="content" class="no-bottom no-top">
-            <div id="top"></div>
+
+            <div id="top">            </div>
 
             <!-- section begin -->
             <section id="section-intro" class="full-height relative owl-slide-wrapper no-top no-bottom text-white" data-stellar-background-ratio=".2">
                 <div class="overlay-gradient">
-
                     <div class="owl-slider-nav">
                         <div class="next"></div>
                         <div class="prev"></div>
@@ -100,75 +101,66 @@
             <!-- section begin -->
             <section id="section-about">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <h2 class="wow fadeInUp">About</h2>
-                            <div class="small-border wow fadeInUp" data-wow-delay=".2s"></div>
-                        </div>
-                        <div class="col-md-6 col-md-offset-3 text-center">
-                            <p class="lead wow fadeInUp">La conférence GET2021 est le premier événement international interdisciplinaire  en ligne organisé par l’institut supérieur des arts multimédias de la Manouba (ISAMM) totalement dédié aux technologies émergentes dans le domaine du développement de jeux vidéo.</p>
-                            <div class="spacer-single"></div>
-                        </div>
-
-                        {# <div class="col-md-4 text-center wow fadeInLeft">
-                            <div class="padding20 sm-mb30">
-                                <i class="icon-profile-male mb20 size70 blue"></i>
-                                <h3>Ask The Experts</h3>
-                                <p>Large audiotorium with capacity of fifty thousand participants is also equipped with advanced facilities for your pleasure.</p>
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h2 class="wow fadeInUp">About</h2>
+                                <div class="small-border wow fadeInUp" data-wow-delay=".2s"></div>
+                            </div>
+                            <div class="col-md-6 col-md-offset-3 text-center">
+                                <p class="lead wow fadeInUp">
+                                    The GET2021 conference is the first international interdisciplinary online event organized by the Higher Institute of Multimedia Arts of Manouba (ISAMM) totally dedicated to Games and Emerging Technologies.
+                                    During 5 days, from Monday November 29 to Friday December 3, renowned researchers from international universities and research institutes will present the current state of research as well as new trends and developments in the fields of virtual reality (VR), augmented reality (AR), Artificial Intelligence (AI), Game design and UX design.
+                                    Register now to receive the code that will allow you to follow the talks and interact with sessions' speakers.
+                                </p>
+                                <div class="spacer-single"></div>
                             </div>
                         </div>
-
-                        <div class="col-md-4 text-center wow fadeInUp">
-                            <div class="padding20 sm-mb30">
-                                <i class="icon-presentation mb20 size70 blue"></i>
-                                <h3>Latest Topics</h3>
-                                <p>The location of the seminar is located in the city center so it is easily reached by private or public vehicles which available for 24 hours.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 text-center wow fadeInRight">
-                            <div class="padding20 sm-mb30">
-                                <i class="icon-desktop mb20 size70 grey"></i>
-                                <h3>Workshops</h3>
-                                <p>There are many hotels available around the event location for temporary residence as long as you follow this event, from motels to 5 stars.</p>
-                            </div>
-                        </div> #}
-
                     </div>
                 </div>
             </section>
             <!-- section close -->
 
             <!-- section begin -->
-            <section id="section-fun-facts" class="no-top no-bottom text-light" data-stellar-background-ratio=".2">
+            <section id="section-presentation" class="no-top no-bottom text-light" data-stellar-background-ratio=".2">
                 <div class="overlay-gradient pt80 pb80">
                     <div class="container">
-
-                        <div class="row">
-                            <div class="col-md-4 col-xs-4 wow fadeIn">
-                                <div class="de_count sm-mb30">
-                                    <h3 class="timer" data-to="5000" data-speed="2500">0</h3>
-                                    <span>Places</span>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 col-xs-4 wow fadeIn" data-wow-delay=".2s">
-                                <div class="de_count sm-mb30">
-                                    <h3 class="timer" data-to="72" data-speed="2500">0</h3>
-                                    <span>Hours</span>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 col-xs-4 wow fadeIn" data-wow-delay=".4s">
-                                <div class="de_count sm-mb30">
-                                    <h3 class="timer" data-to="12" data-speed="2500">0</h3>
-                                    <span>Speakers</span>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 col-xs-4 wow fadeIn" data-wow-delay=".6s">
-                               
-                            </div>
+                      <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2 class="wow fadeInUp">Presentation</h2>
+                            <div class="small-border wow fadeInUp" data-wow-delay=".2s"></div>
+                        </div>
+                        <div class="col-md-6 col-md-offset-3 text-center">
+                            <h3 class="wow">Game Design: Fernando De La Cruz</h3>
+                            <p class="lead wow fadeInUp">Game Design is a broad field and encompasses many skills. This presentation will break down some of the more popular specialties in design and reference popular games to showcase what work is completed by programmers, designers, or artists. The aim of this talk is to demystify the term "Game Design" and to appreciate the technical elements that go into our favorite game experiences.</p>
+                            <div class="spacer-single"></div>
+                        </div>
+                        <div class="col-md-6 col-md-offset-3 text-center">
+                            <h3 class="wow fadeInUp">Maamar Haifa : “How Full Sail University is Creating New Pathways to Learning Using VR and AR”</h3>
+                            <p class="lead wow fadeInUp">Join us for this session where we dive into the world of immersive learning with using VR and AR at Full Sail University, for teaching various math and physics concepts. We will demonstrate our unique approach to teaching online, blended and face-to-face, utilizing emerging technologies with learners.</p>
+                            <div class="spacer-single"></div>
+                        </div>
+                        <div class="col-md-6 col-md-offset-3 text-center">
+                            <h3 class="wow fadeInUp">Psychometric UX Measures in Gaming:  The Diversity of Emotion : Shawn Stafford and Rob Kennedy</h3>
+                            <p class="lead wow fadeInUp">The UX group at Full Sail University embarked on a psychometric scale development project in 2015.  Our approaches took us through game motivation measures, big five-factor, and peer-reviewed individual differences measures from some of the most respected scientists in psychology.  In this session, we will explain our approach, cover some of our core research, and discuss some of the projects we have in the near future.  The audience should walk away with an appreciation of individual emotional differences within and across games and players.</p>
+                            <div class="spacer-single"></div>
+                        </div>
+                        <div class="col-md-6 col-md-offset-3 text-center">
+                            <h3 class="wow fadeInUp">Psychometric UX Measures in Gaming:  The Diversity of Emotion : Shawn Stafford and Rob Kennedy</h3>
+                            <p class="lead wow fadeInUp">The UX group at Full Sail University embarked on a psychometric scale development project in 2015.  Our approaches took us through game motivation measures, big five-factor, and peer-reviewed individual differences measures from some of the most respected scientists in psychology.  In this session, we will explain our approach, cover some of our core research, and discuss some of the projects we have in the near future.  The audience should walk away with an appreciation of individual emotional differences within and across games and players.</p>
+                            <div class="spacer-single"></div>
+                        </div>
+                        <div class="col-md-6 col-md-offset-3 text-center">
+                            <h3 class="wow fadeInUp">The Immersive impact of thegraphic design in videogames and Multi-user virtual environments<br>
+                            Communication by Wafa Bourkhis<br>
+                            Assistant professor in fine arts at the High institute of multimedia arts of Manouba<br>
+                            Doctor in sciences and techniques of arts from universities of Tunis (Tunisia) and Artois (France)</h3>
+                            <p class="lead wow fadeInUp">Game design is a huge area that have an important impact on the video game industry. To have a good gameplay, the player needs many elements to be attracted by the video game.
+                            A professional Game Designer must know what are the issues that could the player encounter to have a good game experience. In the other side, a successful videogame has the most immersive virtual environment, that deeply involve the player in another life.
+                            According to Ernest Adams there is 3 kinds of immersion in videogames: tactical, strategic, and narrative immersion.To understand these kinds of immersion we should take a survey with player to have a clear idea about their user experience or UX.
+                            Multi-user virtual environments are different from video games, they offer more interaction tools with users and the freedom to design their own virtual assets inworld. Second Life and the Open sims are a computer-simulated environments in which could designers improve their creativity and have much more immersion. 
+                            In this communication we will describe how couldthe graphic design impact on player/users to have been immerged in a virtual environmentwhether by playing or by creating their own artworks.
+                            </p>
+                            <div class="spacer-single"></div>
                         </div>
                     </div>
                 </div>
@@ -277,12 +269,61 @@
                             </div>
                         </div>
 
+
+
+
+                          <div class="col-md-3 mt-2 wow fadeIn">
+                            <div class="profile_pic text-center sm-mb30">
+                                <figure class="picframe s2 mb30">
+                                    <a class="simple-ajax-popup" href="team-details-9 .html">
+                                        <span class="filter"></span>
+                                    </a>
+                                    <img src="{{asset('assets/images/participant/Martzi Campos.jpg')}}" class="img-responsive" alt="">
+                                </figure>
+                                <h3>Martzi Campos</h3>
+                            </div>
+                        </div>
+
+                          <div class="col-md-3 mt-2 wow fadeIn">
+                            <div class="profile_pic text-center sm-mb30">
+                                <figure class="picframe s2 mb30" style="height: 80%;">
+                                    <a class="simple-ajax-popup" href="team-details-8.html">
+                                        <span class="filter"></span>
+                                    </a>
+                                    <img src="{{asset('assets/images/participant/Med Ali Hammami.jpg')}}"  class="img-responsive" alt="">
+                                </figure>
+                                <h3>Med Ali Hammami</h3>
+                            </div>
+                        </div>
+                          <div class="col-md-3 mt-2 wow fadeIn">
+                            <div class="profile_pic text-center sm-mb30">
+                                <figure class="picframe s2 mb30">
+                                    <a class="simple-ajax-popup" href="team-details-10 .html">
+                                        <span class="filter"></span>
+                                    </a>
+                                    <img src="{{asset('assets/images/participant/Wafa Bourkhis.jpg')}}" class="img-responsive" alt="">
+                                </figure>
+                                <h3>Wafa Bourkhis</h3>
+                            </div>
+                        </div>
+                          <div class="col-md-3 mt-2 wow fadeIn">
+                            <div class="profile_pic text-center sm-mb30">
+                                <figure class="picframe s2 mb30">
+                                    <a class="simple-ajax-popup" href="team-details-11.html">
+                                        <span class="filter"></span>
+                                    </a>
+                                    <img src="{{asset('assets/images/participant/Sean  Bouchard.jpg')}}" class="img-responsive" alt="">
+                                </figure>
+                                <h3>Sean  Bouchard</h3>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
             <!-- section close -->
 
-            <!-- section begin -->
+             <!-- section begin -->
             <section id="section-schedules" class="no-top no-bottom text-light" data-stellar-background-ratio=".2">
                 <div class="overlay-gradient pt80 pb80">
                     <div class="container">
@@ -653,6 +694,115 @@
             <!-- section close -->
 
             <!-- section begin -->
+            {# <section id="section-organizing" class="no-top no-bottom text-light" data-stellar-background-ratio=".2">
+                <div class="overlay-gradient pt80 pb80">
+                  <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2 class="wow fadeInUp">Organizing committee</h2>
+                            <div class="small-border wow fadeInUp" data-wow-delay=".2s"></div>
+                        </div>
+                        <div class="col-md-6 col-md-offset-3 text-center"> #}
+                            {# <p class="lead wow fadeInUp">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p> #}
+                            {# <div class="spacer-single"></div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                        
+                        <div class="col-md-3 mt-2 wow fadeIn">
+                            <div class="profile_pic text-center sm-mb30">
+                                <figure class="picframe s2 mb30">
+                                    <a class="simple-ajax-popup" href="team-details-1.html">
+                                        <span class="filter"></span>
+                                    </a>
+                                    <img src="{{asset('assets/images/participant/Fernando De La Cruz.jpg')}}" class="img-responsive" alt="">
+                                </figure>
+                                <h3>Karim Azizi</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 wow fadeIn" data-wow-delay=".2s">
+                            <div class="profile_pic text-center sm-mb30">
+                                <figure class="picframe s2 mb30">
+                                    <a class="simple-ajax-popup" href="team-details-2.html">
+                                        <span class="filter"></span>
+                                    </a>
+                                    <img src="{{asset('assets/images/participant/Georgios_N._Yannakakis.jpg')}}" class="img-responsive" alt="">
+                                </figure>
+                                <h3>Hela Sassi</h3>
+                            </div>
+                        </div>
+                        
+
+                        <div class="col-md-3 wow fadeIn" data-wow-delay=".4s">
+                            <div class="profile_pic text-center sm-mb30">
+                                <figure class="picframe s2 mb30">
+                                    <a class="simple-ajax-popup" href="team-details-3.html">
+                                        <span class="filter"></span>
+                                    </a>
+                                    <img src="{{asset('assets/images/participant/gundolf-500x500.png')}}" class="img-responsive" alt="">
+                                </figure>
+                                <h3>Hosni Ajlani</h3>
+                            </div>
+                        </div>
+                        
+
+                        <div class="col-md-3 wow fadeIn" data-wow-delay=".6s">
+                            <div class="profile_pic text-center sm-mb30">
+                                <figure class="picframe s2 mb30">
+                                    <a class="simple-ajax-popup" href="team-details-4.html">
+                                        <span class="filter"></span>
+                                    </a>
+                                    <img src="{{asset('assets/images/participant/Haifa Maamar.JPG')}}" class="img-responsive" alt="">
+                                </figure>
+                                <h3>Skander Bel Hadj</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 wow fadeIn" data-wow-delay=".6s">
+                            <div class="profile_pic text-center sm-mb30">
+                                <figure class="picframe s2 mb30">
+                                    <a class="simple-ajax-popup" href="team-details-5.html">
+                                        <span class="filter"></span>
+                                    </a>
+                                    <img src="{{asset('assets/images/participant/Rebecca Leis.png')}}" class="img-responsive" alt="">
+                                </figure>
+                                <h3>Amine Kchiche</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 wow fadeIn" data-wow-delay=".6s">
+                            <div class="profile_pic text-center sm-mb30">
+                                <figure class="picframe s2 mb30">
+                                    <a class="simple-ajax-popup" href="team-details-6.html">
+                                        <span class="filter"></span>
+                                    </a>
+                                    <img src="{{asset('assets/images/participant/NEW-Kat Schrier.jpg')}}" class="img-responsive" alt="">
+                                </figure>
+                                <h3>Kat Schrier</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 wow fadeIn" data-wow-delay=".6s">
+                            <div class="profile_pic text-center sm-mb30">
+                                <figure class="picframe s2 mb30">
+                                    <a class="simple-ajax-popup" href="team-details-7.html">
+                                        <span class="filter"></span>
+                                    </a>
+                                    <img src="{{asset('assets/images/participant/Curtis L Maughan.jpg')}}" class="img-responsive" alt="">
+                                </figure>
+
+                                <h3>Curtis L Maughan</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                </div>
+            </section> #}
+            <!-- section close -->
+
+            <!-- section begin -->
             <section id="section-register" class="no-top no-bottom text-light" data-stellar-background-ratio=".2">
                 <div class="overlay-gradient pt80 pb80">
                     <div class="container">
@@ -669,11 +819,8 @@
                         </div>
 
                         <div class="row">
-
                             <div class="col-md-12 wow fadeInUp">
-
                                 <div class="row">
-
                                     <div class="col-md-12">
                                         <div id="register-with-map" class="bg-white">
                                             <div name="contactForm" id='contact_form' class="float-form padding60 pt40 form-s1">
@@ -706,78 +853,45 @@
                                             <div class="clearfix"></div>
                                         </div>
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </div>
-
                         <div class="spacer-double"></div>
-
-                        {# <div class="row text-center">
-                            <div class="col-md-4">
-                                <div class="wm-1"></div>
-                                <i class="icon-map id-color size40 mb20"></i>
-                                <h5>Address</h5>
-                                <h4>250 Hamilton Ave, Palo Alto, Manouba</h4>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="wm-1"></div>
-                                <i class="icon-phone id-color size40 mb20"></i>
-                                <h5>Call Us</h5>
-                                <h4>+1 650 329 2000</h4>
-                            </div>
-
-                            <div class="col-md-4">
-
-                                <div class="wm-1"></div>
-                                <i class="icon-envelope id-color size40 mb20"></i>
-                                <h5>Email Us</h5>
-                                <h4>contact@isamm.com</h4>
-                            </div>
-                        </div> #}
-
                     </div>
                 </div>
-
             </section>
             <!-- section close -->
             
             <!-- section begin -->
-            {# <section id="section-sponsors" class="no-top no-bottom text-light" data-stellar-background-ratio=".2">
+            <section id="section-sponsors" class="no-top no-bottom text-light" data-stellar-background-ratio=".2">
                 <div class="overlay-gradient pt80 pb80">
                     <div class="container relative">
                         <div class="row">
                             <div class="row">
                                 <div class="col-md-12 text-center">
-                                    <h2 class="wow fadeInUp">Sponsors</h2>
+                                    <h2 class="wow fadeInUp">Partners</h2>
                                     <div class="small-border wow fadeInUp" data-wow-delay=".2s"></div>
                                     <div class="spacer-single"></div>
                                 </div>
-                                <div class="col-md-6 col-md-offset-3 text-center">
-                                    <p class="lead wow fadeInUp">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
-
-                                </div>
 
                                 <div class="col-md-12 text-center wow fadeInUp">
-                                    <div class="owl-carousel owl-sponsors ">
-                                        <div class="item"><img src="{{asset('assets/images/logo/1.png')}}" alt=""></div>
-                                        <div class="item"><img src="{{asset('assets/images/logo/2.png')}}" alt=""></div>
-                                        <div class="item"><img src="{{asset('assets/images/logo/3.png')}}" alt=""></div>
-                                        <div class="item"><img src="{{asset('assets/images/logo/4.png')}}" alt=""></div>
-                                        <div class="item"><img src="{{asset('assets/images/logo/5.png')}}" alt=""></div>
-                                        <div class="item"><img src="{{asset('assets/images/logo/6.png')}}" alt=""></div>
-                                        <div class="item"><img src="{{asset('assets/images/logo/7.png')}}" alt=""></div>
-                                        <div class="item"><img src="{{asset('assets/images/logo/8.png')}}" alt=""></div>
+                                    <div class="owl-carousel owl-sponsors" >
+                                        <div class="item"><img src="{{asset('assets/images/logo/PAQ_DGSE.jpg')}}" alt=""></div>
+                                        <div class="item"><img src="{{asset('assets/images/logo/LOGO UMA.png')}}" alt=""></div>
+                                        <div class="item"><img src="{{asset('assets/images/logo/logo isamm.jpg')}}" alt=""></div>
+                                        <div class="item"><img src="{{asset('assets/images/logo/Full_Sail_University_Logo.jpg')}}" alt=""></div>
+                                        <div class="item"><img src="{{asset('assets/images/logo/ieee_tunisia.jpg')}}" alt=""></div>
+                                        <div class="item"><img src="{{asset('assets/images/logo/logos_cologne game LAB.png')}}" alt=""></div>
+                                        <div class="item"><img src="{{asset('assets/images/logo/University_of_Malta_Coat_of_Arms.svg')}}" alt=""></div>
+                                        <div class="item"><img src="{{asset('assets/images/logo/US Embassy.png')}}" alt=""></div>
+                                        <div class="item"><img src="{{asset('assets/images/logo/USC.png')}}" alt=""></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section> #}
+            </section>
             <!-- section close -->
 
         </div>
@@ -791,13 +905,13 @@
                         {# <div class="mt10">&copy; Copyright</div> #}
                     </div>
 
-                    <div class="col-md-6 text-right sm-text-center">
+                    {# <div class="col-md-6 text-right sm-text-center">
                         <div class="social-icons">
                             <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
                             <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
                             <a href="#"><i class="fa fa-rss fa-lg"></i></a>
                         </div>
-                    </div>
+                    </div> #}
                 </div>
             </div>
 
